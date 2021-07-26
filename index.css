@@ -4,21 +4,28 @@
     text-align: center;
 }
 
+html, body {
+    height: 100%;
+}
+
 button {
     color: #494949;
 	text-transform: uppercase;
 	text-decoration: none;
 	background: #ffffff;
-	border: 2px solid #00c3ff;
+	border: 2px solid #9657fc;
 	display: inline-block;
 	transition: all 0.4s ease 0s;
     border-radius: 3px;
+    padding: 20px;
+    min-width: 150px;
+    margin: 0 10px 0 10px;
 }
 
 button:hover {
 	color: #ffffff;
-	background: #056ed1;
-	border-color: #056ed1;
+	background: #4d3491;
+	border-color: #4d3491;
 	transition: all 0.4s ease 0s;
 }
 
@@ -29,30 +36,52 @@ button:hover {
     align-content: center;
 }
 
-.top-container {
+.main-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100%;
+    overflow: hidden;
+}
+
+.left-container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: stretch;
+    overflow: hidden;
+    flex: 1;
+    margin-right: 10px;
 }
 
-.result-container > div, button {
-    padding: 20px;
-    min-width: 150px;
-    margin: 0 10px 0 10px;
+.result-container, .btn-container {
+    min-height: 10%;
+    height: 10%;
 }
 
-.table-container {
+.result-container {
+    padding: 15px;
+    border: 2px solid #9657fc;
+}  
+
+
+.right-container {
+    margin-left: 10px;
+}
+
+.right-container, .right-container > div {
     display: flex;
     align-items: flex-start;
+    flex: 4;
+    height: 100%;
 }
-.table-container > .undrown-table   { flex: 1; }
-.table-container > .drown-table     { flex: 4; }
 
 .container > div {
-    padding: 10px;
-    border: 2px #ccc solid;
-    border-width: 1px;
-    max-height: 1200px;
+    width: 100%;
+}
+
+.right-container > div {
+    height: 100%;
 }
 
 /* table css */
@@ -67,28 +96,35 @@ table {
 }
 
 table thead tr {
-    background-color: #26a1f3;
+    background-color: #9d2cc0;
     color: #ffffff;
     text-align: left;
     font-weight: bold;
 }
 
-table th,
-table td {
-    padding: 12px 15px;
+.drown-table table {
+    height: 95%;
 }
 
-table tbody tr {
-    border-bottom: 1px solid #dddddd;
+.drown-table table tbody tr,
+.undrown-table table tbody tr {
+    border-bottom: 1px solid #fafafa;
+}
+
+.drown-table table td {
+    height: 5.5%;
+}
+
+.undrown-table table tbody tr td {
     height: 1em;
 }
 
 table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+    background-color: #f9dfff;
 }
 
 table tbody tr:last-of-type {
-    border-bottom: 2px solid #0050fd;
+    border-bottom: 2px solid #9d2cc0;
 }
 
 .drown-table table tbody tr td:nth-of-type(odd) {
@@ -99,20 +135,13 @@ table tbody tr:last-of-type {
     width: 35%;
 }
 
-table tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-}
-
 @media (max-device-width:768px) {
-    .table-container {
+    .right-container {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         width: auto;
     }
-    .table-container > .undrown-table   { order: 2; width: 100%; }
-    .table-container > .drown-table     { order: 1; width: 100%; }
 
     table {
         width: 100%;
