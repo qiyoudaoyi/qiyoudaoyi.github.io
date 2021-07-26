@@ -9,15 +9,17 @@ html, body {
 }
 
 button {
-    color: #494949;
+    color: #240029;
 	text-transform: uppercase;
 	text-decoration: none;
+    font-size:medium;
+    font-weight: bolder;
 	background: #ffffff;
 	border: 2px solid #9657fc;
 	display: inline-block;
 	transition: all 0.4s ease 0s;
     border-radius: 3px;
-    padding: 20px;
+    padding: 10px;
     min-width: 150px;
     margin: 0 10px 0 10px;
 }
@@ -31,7 +33,7 @@ button:hover {
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
 }
@@ -51,22 +53,28 @@ button:hover {
     align-items: stretch;
     overflow: hidden;
     flex: 1;
-    margin-right: 10px;
+    margin: 10px;
+}
+
+.btn-container {
+    justify-content: center;
 }
 
 .result-container, .btn-container {
-    min-height: 10%;
-    height: 10%;
+    max-height: 10%;
+    margin: 5px;
 }
 
 .result-container {
+    margin: auto;
     padding: 15px;
     border: 2px solid #9657fc;
+    size: auto;
 }  
 
 
 .right-container {
-    margin-left: 10px;
+    margin: 10px;
 }
 
 .right-container, .right-container > div {
@@ -116,7 +124,8 @@ table thead tr {
 }
 
 .undrown-table table tbody tr td {
-    height: 1em;
+    font-size: smaller;
+    height: 0.7em;
 }
 
 table tbody tr:nth-of-type(even) {
@@ -136,14 +145,15 @@ table tbody tr:last-of-type {
 }
 
 @media (max-device-width:768px) {
-    .right-container {
+    .main-container {
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        width: auto;
     }
-
-    table {
-        width: 100%;
+    .right-container {
+        order: 1;
+        flex: 1;
+    }
+    .left-container {
+        order: 2;
+        flex: 1;
     }
 }
