@@ -1,6 +1,4 @@
 const drawOneBtn = document.getElementById("draw-one-btn");
-const drawAllBtn = document.getElementById("draw-all-btn");
-// const drawResetBtn = document.getElementById("draw-reset-btn");
 const lastDrownTeam = document.getElementById("last-drown-team");
 const undrownTeamTable = document.getElementById("undrown-team-tbody");
 const drownTeamTable = document.getElementById("drown-team-tbody");
@@ -58,9 +56,6 @@ window.onload = () => {
 
 drawOneBtn.addEventListener("click", () => { drawOneTeam() });
 
-drawAllBtn.addEventListener("click", () => {
-    while (draws < numberOfTeams) { drawOneTeam() }
-});
 
 const drawOneTeam = () => {
     if (draws++ < numberOfTeams) {
