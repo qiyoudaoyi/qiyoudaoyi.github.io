@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <title>抽籤網站</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+    <div class="top-container container">
+      <div class="btn-container container">
+        <button id="draw-one-btn">抽！</button>
+        <button id="draw-all-btn">一次抽完！</button>
+        <!-- <button id="draw-reset-btn">重置</button> -->
+      </div>
+
+      <div id="last-drown-team" class="result-container container"></div>
+    
+      <div class="table-container container">
+        <div class="undrown-table">
+          <table>
+            <thead>
+              <th>未抽到的隊伍</th>
+            </thead>
+            <tbody id="undrown-team-tbody"></tbody>
+          </table>
+        </div>
+        
+        <div class="drown-table">
+          <table>
+            <thead>
+              <tr><th>編號</th><th>隊名</th><th>編號</th><th>隊名</th></tr>
+            </thead>
+            <tbody id="drown-team-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+  </div>
+    <script src='.\index.js'></script>
+
+  </body>
+</html>
