@@ -12,7 +12,7 @@ button {
     color: #240029;
 	text-transform: uppercase;
 	text-decoration: none;
-    font-size:medium;
+    font-size:large;
     font-weight: bolder;
 	background: #ffffff;
 	border: 2px solid #9657fc;
@@ -120,6 +120,7 @@ table thead tr {
 }
 
 .drown-table table td {
+    font-size: large;
     height: 5.5%;
 }
 
