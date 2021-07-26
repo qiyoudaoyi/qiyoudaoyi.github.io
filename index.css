@@ -1,6 +1,6 @@
 * {
     font-family: '微軟正黑體';
-    font-size: medium;
+    font-size: small;
     text-align: center;
 }
 
@@ -46,7 +46,7 @@ button:hover {
     align-items: flex-start;
 }
 .table-container > .undrown-table   { flex: 1; }
-.table-container > .drown-table     { flex: 2; }
+.table-container > .drown-table     { flex: 4; }
 
 .container > div {
     padding: 10px;
@@ -80,7 +80,7 @@ table td {
 
 table tbody tr {
     border-bottom: 1px solid #dddddd;
-    height: 40px;
+    height: 20px;
 }
 
 table tbody tr:nth-of-type(even) {
