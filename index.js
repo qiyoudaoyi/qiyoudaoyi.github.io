@@ -104,8 +104,8 @@ confirmBtn.addEventListener("click", () => {
 
         const trNode_1 = document.createElement("tr");
         const trNode_2 = document.createElement("tr");
-        trNode_1.innerHTML = `<td>${defaultNames[2 * i]}</td>`
-        trNode_2.innerHTML = `<td>${defaultNames[2 * i + 1]}</td>`
+        trNode_1.innerHTML = `<td>${teamsData[2 * i].name}</td>`
+        trNode_2.innerHTML = `<td>${teamsData[2 * i + 1].name}</td>`
         tbodyNode.appendChild(trNode_1);
         tbodyNode.appendChild(trNode_2);
     }
