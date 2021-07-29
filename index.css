@@ -1,160 +1,163 @@
 * {
     font-family: '微軟正黑體';
-    font-size: small;
     text-align: center;
 }
 
 html, body {
+    width: 100%;
     height: 100%;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    gap: 10px;
+}
+
+/* LEFT CONTAINER */
+
+.left-container {
+    height: 100%;
+    flex: 1 1 35%;
+    flex-direction: column;
+    gap: 5px;
+    border-bottom: 2px solid #9d2cc0;
+}
+
+.left-container * {
+    font-size: 1.75vh;
+}
+
+.draw-container {
+    flex: 1 1 17.5%;
+    gap: 5px;
+}
+
+.draw-container * {
+    color: #240029;
+    font-weight: bolder;
+}
+
+.draw-container > button {
+    flex: 1 1 20%;
+    font-size: 300%;
+}
+
+.draw-container > div {
+    flex: 1 1 80%;
+}
+
+.last-drown-container {
+    flex: 1 1 80%;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.last-drown-container > div {
+    color: #240029;
+    font-weight: bolder;
+    border: 2.5px solid #9657fc;
+    border-radius: 5px;
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 135%;
+}
+
+.undrown-div {
+    flex: 1 1 80%;
+    height: 80%;
+    background-color: aliceblue;
+    overflow-y: auto;
+}
+
+/* RIGHT CONTAINER */
+
+.right-container {
+    flex: 1 1 65%;
+    flex-direction: column;
+    height: 100%;
+    border-bottom: 2px solid #9d2cc0;
+}
+
+.right-container > * {
+    width: 100%;
+    font-size: 2vh;
+}
+
+.right-container > table {
+    height: 85%;
+}
+
+.right-container > button {
+    height: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*****************************************/
 button {
     color: #240029;
-	text-transform: uppercase;
-	text-decoration: none;
-    font-size:large;
     font-weight: bolder;
 	background: #ffffff;
-	border: 2px solid #9657fc;
+	border: 2.5px solid #9657fc;
 	display: inline-block;
 	transition: all 0.4s ease 0s;
-    border-radius: 3px;
-    padding: 10px;
-    min-width: 150px;
-    margin: 0 10px 0 10px;
+    border-radius: 5px;
 }
 
 button:hover {
-	color: #ffffff;
+	color: aliceblue;
 	background: #4d3491;
 	border-color: #4d3491;
 	transition: all 0.4s ease 0s;
 }
 
-.container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-}
-
-.main-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    height: 100%;
-    overflow: hidden;
-}
-
-.left-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    overflow: hidden;
-    flex: 1;
-    margin: 10px;
-}
-
-.btn-container {
-    justify-content: center;
-}
-
-.result-container, .btn-container {
-    max-height: 10%;
-    margin: 5px;
-}
-
-.result-container {
-    margin: auto;
-    padding: 15px;
-    border: 2px solid #9657fc;
-    size: auto;
-}  
-
-
-.right-container {
-    margin: 10px;
-}
-
-.right-container, .right-container > div {
-    display: flex;
-    align-items: flex-start;
-    flex: 4;
-    height: 100%;
-}
-
-.container > div {
-    width: 100%;
-}
-
-.right-container > div {
-    height: 100%;
-}
-
-/* table css */
-
 table {
     border-collapse: collapse;
-    font-size: small;
-    width: 100%;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
 }
 
-table thead tr {
+thead th {
     background-color: #9d2cc0;
-    color: #ffffff;
-    text-align: left;
+    color: aliceblue;
     font-weight: bold;
+    font-size: 115%;
 }
 
-.drown-table table {
-    height: 95%;
+.undrown-div th {
+    font-size: 2vh;
 }
 
-.drown-table table tbody tr,
-.undrown-table table tbody tr {
+tbody tr {
     border-bottom: 1px solid #fafafa;
 }
 
-.drown-table table td {
-    font-size: large;
-    height: 5.5%;
+tbody tr:nth-of-type(odd) {
+    background-color: aliceblue;
 }
 
-.undrown-table table tbody tr td {
-    font-size: smaller;
-    height: 0.7em;
-}
-
-table tbody tr:nth-of-type(even) {
+tbody tr:nth-of-type(even) {
     background-color: #f9dfff;
 }
 
-table tbody tr:last-of-type {
+tbody tr:last-of-type {
     border-bottom: 2px solid #9d2cc0;
 }
 
-.drown-table table tbody tr td:nth-of-type(odd) {
-    width: 15%;
+.right-container td:nth-of-type(odd) {
+    width: 10%;
 }
 
-.drown-table table tbody tr td:nth-of-type(even) {
-    width: 35%;
-}
-
-@media (max-device-width:768px) {
-    .main-container {
-        flex-direction: column;
-    }
-    .right-container {
-        order: 1;
-        flex: 1;
-    }
-    .left-container {
-        order: 2;
-        flex: 1;
-    }
+.right-container td:nth-of-type(even) {
+    width: 40%;
 }
