@@ -175,8 +175,8 @@ tbody tr:last-of-type {
     }
 
     .draw-container {
-        min-height: 100px;
-        max-height: 100px;
+        min-height: 250px;
+        max-height: 250px;
     }
 
     .right-container {
