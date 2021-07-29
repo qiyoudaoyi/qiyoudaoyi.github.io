@@ -161,3 +161,39 @@ tbody tr:last-of-type {
 .right-container td:nth-of-type(even) {
     width: 40%;
 }
+
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) { 
+        .main-container {
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+        }
+
+        .left-container {
+            flex: 1 1 25%;
+        }
+
+        .draw-container {
+            min-height: 150px;
+        }
+
+        .right-container {
+            flex: 1 1 75%;
+        }
+
+        /* .left-container {
+            height: 100%;
+            flex: 1 1 35%;
+            flex-direction: column;
+            gap: 5px;
+            border-bottom: 2px solid #9d2cc0;
+        } */
+        
+        .draw-container > button {
+            flex: 1 0 20%;
+            font-size: 300%;
+        }
+}
