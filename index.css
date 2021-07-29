@@ -170,15 +170,17 @@ tbody tr:last-of-type {
     }
 
     .left-container {
-        flex: 1 1 25%;
+        flex: 1 1 40%;
+        max-height: 40%;
     }
 
     .draw-container {
-        min-height: 150px;
+        min-height: 100px;
+        max-height: 100px;
     }
 
     .right-container {
-        flex: 1 1 75%;
+        flex: 1 1 60%;
     }
 
     .draw-container > button {
