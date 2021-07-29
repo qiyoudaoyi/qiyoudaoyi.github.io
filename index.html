@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
   <head>
+    <meta charset="UTF-8">
     <title>抽籤網站</title>
     <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
     <div class="main-container container">
+
       <div class="left-container container">
-        <div class="btn-container container">
-          <button id="draw-one-btn">抽！</button>
+        <div class="draw-container container">
+          <button id="draw-btn">抽</button>
+          <div id="last-drown" class="last-drown-container container"></div>
         </div>
-
-        <div><div id="last-drown-team" class="result-container container"></div></div>
-
-        <div class="undrown-table">
-          <table>
-            <thead>
-              <th>未抽到的隊伍</th>
-            </thead>
-            <tbody id="undrown-team-tbody"></tbody>
+        <div class="undrown-div">
+          <table id="undrown-table">
+            <thead><tr><th>未抽到的隊伍</th></tr></thead>
           </table>
         </div>
       </div>
 
       <div class="right-container container">
-        <div class="drown-table">
-          <table>
-            <thead>
-              <tr><th>編號</th><th>隊名</th><th>編號</th><th>隊名</th></tr>
-            </thead>
-            <tbody id="drown-team-tbody"></tbody>
-          </table>
-        </div>
+        <table id="team-table">
+          <thead><tr><th>編號</th><th>隊名</th><th>編號</th><th>隊名</th></tr></thead>
+        </table>
+        <button id="confirm-btn">確認隊伍 開始抽籤</button>
       </div>
+
     </div>
-    
+
     <script src='.\index.js'></script>
 
   </body>
