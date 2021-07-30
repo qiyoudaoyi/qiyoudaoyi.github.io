@@ -31,7 +31,7 @@ html, body {
 }
 
 .left-container * {
-    font-size: 1.75vh;
+    font-size: 2.25vh;
 }
 
 .draw-container {
@@ -89,7 +89,7 @@ html, body {
 
 .right-container > * {
     width: 100%;
-    font-size: 2vh;
+    font-size: 3vh;
 }
 
 .right-container > table {
