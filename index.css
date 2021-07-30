@@ -178,22 +178,29 @@ tbody tr:last-of-type {
     }
 
     .left-container {
-        flex: 1 1 40%;
-        max-height: 40%;
+        flex: 1 1 35%;
+        max-height: 35%;
+    }
+
+    .left-container * {
+        font-size: 1.5vh;
     }
 
     .draw-container {
-        min-height: 250px;
-        max-height: 250px;
+        min-height: 225px;
+        max-height: 225px;
     }
 
     .right-container {
-        flex: 1 1 60%;
+        flex: 1 1 65%;
     }
 
     .draw-container > button {
         flex: 1 0 20%;
-        font-size: 300%;
+    }
+
+    .draw-container > div {
+        flex: 1 0 80%;
     }
 
     .last-drown-container > div, button {
