@@ -196,11 +196,11 @@ tbody tr:last-of-type {
     }
 
     .draw-container > button {
-        flex: 1 0 20%;
+        flex: 1 1 20%;
     }
 
     .draw-container > div {
-        flex: 1 0 80%;
+        flex: 1 1 80%;
     }
 
     .last-drown-container > div, button {
