@@ -191,4 +191,12 @@ tbody tr:last-of-type {
         flex: 1 0 20%;
         font-size: 300%;
     }
+
+    .last-drown-container > div, button {
+        border-radius: 10px;
+    }
+
+    table {
+        border-radius: 10px 10px 0 0;;
+    }
 }
