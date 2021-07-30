@@ -168,6 +168,10 @@ tbody tr:last-of-type {
 }
 
 @media screen and (orientation: portrait) { 
+    * {
+        font-size: 1.5vh;
+    }
+
     .main-container {
         flex-direction: column-reverse;
         justify-content: flex-end;
