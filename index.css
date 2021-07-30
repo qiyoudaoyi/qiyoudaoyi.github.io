@@ -143,11 +143,15 @@ tbody tr {
     border-bottom: 1px solid #fafafa;
 }
 
-tbody tr:nth-of-type(odd) {
+tbody tr:nth-of-type(odd),
+.team-table tbody tr:nth-of-type(4n + 1),
+.team-table tbody tr:nth-of-type(4n + 2) {
     background-color: aliceblue;
 }
 
-tbody tr:nth-of-type(even) {
+tbody tr:nth-of-type(even),
+.team-table tbody tr:nth-of-type(4n + 3),
+.team-table tbody tr:nth-of-type(4n + 4) {
     background-color: #f9dfff;
 }
 

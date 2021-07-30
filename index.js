@@ -111,7 +111,8 @@ confirmBtn.addEventListener("click", () => {
     }
     undrownTable.appendChild(tbodyNode);
     leftContainer.style.display = 'flex';
-    teamTable.style.height = '100%'
+    teamTable.style.height = '100%';
+    teamTable.className = 'team-table';
     lastDrown.innerHTML = `<div>抽出的隊伍會顯示在此</div>`;
 })
 
