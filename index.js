@@ -69,9 +69,9 @@ window.onload = () => {
         const trNode = document.createElement("tr");
         trNode.innerHTML =
             `<td>${2 * i + 1}</td>
-            <td contentEditable="true">${defaultNames[2 * i + 1]}</td>
+            <td contentEditable="true">${defaultNames[2 * i]}</td>
             <td>${2 * i + 2}</td>
-            <td contentEditable="true">${defaultNames[2 * i + 2]}</td>`;
+            <td contentEditable="true">${defaultNames[2 * i + 1]}</td>`;
         tbodyNode.appendChild(trNode);
     }
     teamTable.appendChild(tbodyNode);
